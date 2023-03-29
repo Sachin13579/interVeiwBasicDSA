@@ -30,18 +30,17 @@ var number = "ram"; //ram //racecar
 
 function optimizedCheckPalin(number) {
   if (number < 0) {
-    console.log("ERROR: cant'determine because number is negative");
+    return "ERROR: cant'determine because number is negative";
   }
   let numStr = number.toString();
   let n = numStr.length;
   let flag = true;
   for (let i = 0; i < n / 2; i++) {
-    // console.log("n", n / 2);
-    if (numStr[i] !== numStr[n - i - 1]) {
+    if (numStr[i] !== numStr[n - 1 - i]) {
       flag = false;
       break;
     }
   }
-  console.log(flag ? "yes" : "no");
+  return flag ? "yes" : "no";
 }
-optimizedCheckPalin("racecar");
+console.log(optimizedCheckPalin("racecar"));
