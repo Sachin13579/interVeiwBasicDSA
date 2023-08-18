@@ -21,6 +21,8 @@ function optumPowerOfN(base, power){
     }
 
 }
+// time complexity=O(log n);
+// space complexity=O(n);
 
 
 // console.log(powerOfN(4,2))
