@@ -18,9 +18,9 @@ function mergeSort(arr) {
         return arr
     }
 
-    let mid = arr.length / 2
+    // let mid = arr.length / 2
     // console.log(mid);
-    // let mid = 0 + (arr.length - 0) / 2
+    let mid = 0 + (arr.length - 0) / 2
 
     let left = mergeSort(arr.slice(0, mid));
     let right = mergeSort(arr.slice(mid));
