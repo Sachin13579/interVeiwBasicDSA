@@ -44,6 +44,19 @@ class Linkedlist {
     this.tail.next = newTail;
     this.length++
   }
+  insertAtPosition(postion, value) {
+    let newNode=new Node(value);
+    let current = this.head;
+    let cnt=1
+    while(cnt<postion-1){
+      current=current.next
+        cnt++
+    }
+    newNode.next=current.next;
+    current.next = newNode
+
+    console.log("oinsetion at naywhere",current,cnt)
+  }
 
 }
 let list = new Linkedlist();
@@ -52,5 +65,7 @@ list.insert(2)
 list.insert(5)
 list.insertAtHead(3);
 list.insertAtTail()
+list.printlist()
+list.insertAtPosition(3,88)
 list.printlist()
 console.log(list)
