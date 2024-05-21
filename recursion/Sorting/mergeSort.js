@@ -15,7 +15,7 @@ function mergeTwoSortedArray(left, right) {
 function mergeSort(arr) {
 
     if (arr.length <= 1) {
-        return arr
+        return arr``
     }
 
     // let mid = arr.length / 2
